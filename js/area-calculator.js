@@ -45,21 +45,21 @@ function calculateParallelogramArea() {
   const parallelogramBaseField = document.getElementById('parallelogram-base');
   const parallelogramBaseTextValue = parallelogramBaseField.value;
   const parallelogramBase = parseFloat(parallelogramBaseTextValue);
+
+  // Get the Parallelogram height
+
+  const parallelogramHeightField = document.getElementById(
+    'parallelogram-height'
+  );
+  const parallelogramHeightTextValue = parallelogramHeightField.value;
+  const parallelogramHeight = parseFloat(parallelogramHeightTextValue);
+
+  // Calculate Parallelogram Area
+
+  const parallelogramArea = parallelogramBase * parallelogramHeight;
+
+  // Show the Parallelogram Area
+
+  const parallelogramAreaSpan = document.getElementById('parallelogram-area');
+  parallelogramAreaSpan.innerText = parallelogramArea;
 }
-
-// Get the Parallelogram height
-
-const parallelogramHeightField = document.getElementById(
-  'parallelogram-height'
-);
-const parallelogramHeightTextValue = parallelogramHeightField.value;
-const parallelogramHeight = parseFloat(parallelogramHeightTextValue);
-
-// Calculate Parallelogram Area
-
-const parallelogramArea = parallelogramBase * parallelogramHeight;
-
-// Show the Parallelogram Area
-
-const parallelogramAreaSpan = document.getElementById('parallelogram-area');
-parallelogramAreaSpan.innerText = parallelogramArea;
